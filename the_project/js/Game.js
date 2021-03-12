@@ -25,5 +25,36 @@ class Game {
     get activePlayer() {
         return this.players.find(player => player.active);
     }
+
+    /**
+ * Branches code, depending on what key player presses
+ * @param   {Object}    e - Keydown event object
+ */
+
+    handleKeydown(e) {
+        if (this.ready) {
+            if (e.key === "ArrowLeft") {
+                //move the token left
+                //this.activePlayer.activeToken.moveleft();
+                console.log('fart');
+                document.querySelector('.table').innerHTML = 'fart';
+            }
+            else if (e.key === "ArrowRight") {
+                //move the token right
+                //this.activePlayer.activetoken.moveRight(this.board.columns);
+                console.log('smell');
+                document.querySelector('.table').innerHTML = 'smell';
+            }
+            else if (e.key === "ArrowDown") {
+                //move the token down
+                console.log('poop');
+                document.querySelector('.table').innerHTML = 'poop';
+            }
+            else if (e.key === "ArrowUp") {
+                console.log('booger');
+                document.querySelector('.table').innerHTML = 'booger';
+            }
+        }
+    }
 }
 
