@@ -35,24 +35,20 @@ class Game {
         if (this.ready) {
             if (e.key === "ArrowLeft") {
                 //move the token left
-                //this.activePlayer.activeToken.moveleft();
-                console.log('fart');
-                document.querySelector('.table').innerHTML = 'fart';
+               this.activePlayer.activeToken.moveleft();
+               
             }
             else if (e.key === "ArrowRight") {
                 //move the token right
-                //this.activePlayer.activetoken.moveRight(this.board.columns);
-                console.log('smell');
-                document.querySelector('.table').innerHTML = 'smell';
+               this.activePlayer.activetoken.moveRight(this.board.columns);
+                
             }
             else if (e.key === "ArrowDown") {
                 //move the token down
-                console.log('poop');
-                document.querySelector('.table').innerHTML = 'poop';
+                
             }
             else if (e.key === "ArrowUp") {
-                console.log('booger');
-                document.querySelector('.table').innerHTML = 'booger';
+                
             }
         }
     }
